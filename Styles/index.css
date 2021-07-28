@@ -1,0 +1,112 @@
+@font-face{
+	font-family:"Ebrima";
+	src:url('../Fonts/Ebrima.ttf');
+	src:url('../Fonts/Ebrima.eot?#iefix') format('embedded-opentype'),
+		url('../Fonts/Ebrima.woff') format('woff'),
+	url('../Fonts/Ebrima.eot') format('embedded-opentype'),
+	url('../Fonts/Ebrima.svg') format('svg')
+}
+@font-face{
+	font-family:"Ebrima Bold";
+	src:url('../Fonts/Ebrima Bold.ttf');
+	src:url('../Fonts/Ebrima Bold.eot?#iefix') format('embedded-opentype'),
+		url('../Fonts/Ebrima Bold.woff') format('woff'),
+	url('../Fonts/Ebrima Bold.eot') format('embedded-opentype'),
+	url('../Fonts/Ebrima Bold.svg') format('svg')
+}
+body{
+  margin:0px;
+}
+#Header{
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  box-shadow:0px 0px 5px rgb(0,0,0);
+  padding:10px;
+  display:flex;
+  display: -ms-flexbox;
+  display:-webkit-box;
+  display:-webkit-flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Ebrima Bold";
+  font-size: 20px;
+  box-sizing:border-box;
+}
+#HeaderTabs{
+  display:flex;
+  display: -ms-flexbox;
+  display:-webkit-box;
+  display:-webkit-flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items:center;
+  width:90%;
+}
+#HeaderTabs div{
+  cursor:pointer;
+  color:rgb(170,170,170);
+}
+#HeaderTabs div:hover{
+  color:rgb(150,0,200);
+}
+#HeaderImg{
+  max-width:60px;
+  margin-top:5px;
+}
+
+@media screen and (max-width:500px){
+  #HeaderTabs{
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    top:90px;
+    right:-100%;
+    width:100%;
+    background: rgb(255,255,255);
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+  }
+  #HeaderTabs.show{
+    right:5%;
+  }
+  #HeaderTabs div{
+  cursor:pointer;
+  color:rgb(150,0,200);
+    margin-bottom: 5%;
+}
+  #Header{
+    justify-content: space-between;
+  }
+  #BannerMenu{
+    height: 30px;
+    width:30px;
+    cursor:pointer;
+  }
+  #BannerMenu div{
+    background: rgb(150,0,200);
+    width:100%;
+    height:5px;
+    margin: 5px;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+  }
+  #BannerMenu #Bar1.clicked{
+   transform-style: preserve-3d;
+    transform: translateY(10px) rotate(-45deg);
+  }
+  #BannerMenu #Bar2.clicked{
+    opacity: 0;
+  }
+  #BannerMenu #Bar3.clicked{
+transform-style: preserve-3d;
+    transform: translateY(-10px) rotate(45deg);
+  }
+}
