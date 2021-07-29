@@ -116,7 +116,7 @@ body{
   border-radius:5px;
   -webkit-border-radius:5px;
 }
-.Product:hover{
+.Product:hover, .Product:focus{
   color: rgb(255,255,255);
    background: linear-gradient(to left,rgb(150,0,200),rgb(200,0,250));
   transform:rotateY(180deg) rotateX(0deg);
