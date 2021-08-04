@@ -1,0 +1,14 @@
+#Testbox{
+  transition:2s;
+  -moz-transition:2s;
+  -ms-transition:2s;
+  -webkit-transition:2s;
+  -o-transition:2s;
+  width:500px;
+  height:100px;
+  background: linear-gradient(to right,rgb(100,0,150),rgb(200,0,250));
+  margin-bottom: 1000px;
+  position: relative;
+  top:500px;
+  opacity: 0;
+}

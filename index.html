@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 user-scalable=0">  
   </head>
   
-  <body>
+  <body onscroll="SlideInElements()">
     <div id="Header">
     <img id="HeaderImg" src="Images/Shop%20Street.png">
     <div id="HeaderTabs">
@@ -16,8 +16,8 @@
     <div id="Cart">
       Cart
       </div>
-    <div id="Purchases">
-      Purchases
+    <div id="Favourites">
+      Favourites
       </div>
     <div id="Account">
     Account
@@ -31,70 +31,70 @@
     </div>
     <div id="MainContent">
     <div id="HeaderExtra"></div>
-    <div class="Category">
+      <div class="Category hidden">
       <h1>Category: Phones</h1>
        <div class="Catalogue">
       <div class="Product">
-        <div>
-          <h3>Phone 1</h3>
-          <img src="Images/Phone%20Product.png">
+                  <img class="Icon" src="Images/Unfavourite.png" onclick="Favourite(this)">
+        <div>    
+          <img class="Product_Image" src="Images/Phone%20Product.png">
+           <h3>Phone X</h3>
+          <input type="button" value="Details" onclick="ShowDetails(this)">
         </div>
-        <div class="Description">
-          This is the description of the phone
+      </div>     
+<div class="Product">
+                  <img class="Icon" src="Images/Unfavourite.png" onclick="Favourite(this)">
+        <div>    
+          <img class="Product_Image" src="Images/Phone%20Product.png">
+           <h3>Phone X</h3>
+          <input type="button" value="Details" onclick="ShowDetails(this)">
         </div>
-      </div>
-         <div class="Product">
-        <div>
-          <h3>Phone 2</h3>
+      </div>     
+<div class="Product">
+                  <img class="Icon" src="Images/Unfavourite.png" onclick="Favourite(this)">
+        <div>    
+          <img class="Product_Image" src="Images/Phone%20Product.png">
+           <h3>Phone X</h3>
+          <input type="button" value="Details" onclick="ShowDetails(this)">
         </div>
-        <div class="Description">
-          This is the description of the phone
+      </div>     
+<div class="Product">
+                  <img class="Icon" src="Images/Unfavourite.png" onclick="Favourite(this)">
+        <div>    
+          <img class="Product_Image" src="Images/Phone%20Product.png">
+           <h3>Phone X</h3>
+          <input type="button" value="Details" onclick="ShowDetails(this)">
         </div>
-      </div>        
-         <div class="Product">
-        <div>
-          <h3>Phone 3</h3>
+      </div>     
+<div class="Product">
+                  <img class="Icon" src="Images/Unfavourite.png" onclick="Favourite(this)">
+        <div>    
+          <img class="Product_Image" src="Images/Phone%20Product.png">
+           <h3>Phone X</h3>
+          <input type="button" value="Details" onclick="ShowDetails(this)">
         </div>
-        <div class="Description">
-          This is the description of the phone
+      </div>     
+<div class="Product">
+                  <img class="Icon" src="Images/Unfavourite.png" onclick="Favourite(this)">
+        <div>    
+          <img class="Product_Image" src="Images/Phone%20Product.png">
+           <h3>Phone X</h3>
+          <input type="button" value="Details" onclick="ShowDetails(this)">
         </div>
-      </div>
-         <div class="Product">
-        <div>
-          <h3>Phone 4</h3>
+      </div>     
         </div>
-        <div class="Description">
-          This is the description of the phone
-        </div>
-      </div>
-         <div class="Product">
-        <div>
-          <h3>Phone 5</h3>
-        </div>
-        <div class="Description">
-          This is the description of the phone
-        </div>
-      </div>        
-         <div class="Product">
-        <div>
-          <h3>Phone 6</h3>
-        </div>
-        <div class="Description">
-          This is the description of the phone
-        </div>
-      </div>
-         <div class="Product">
-        <div>
-          <h3>Phone 7</h3>
-        </div>
-        <div class="Description">
-          This is the description of the phone
-        </div>
-      </div>
-       </div>
       </div>
     </div>
-    <script src="Scripts/index.js"></script>
+    <div id="Alert" class="hidden"></div>
+    <div id="Product_Details">
+    <div id="Close_Button" onclick="CloseDetails(this)">
+      <div id="bar1"></div>  
+      <div id="bar2"></div>
+      </div>
+      <div id="Details">
+      </div>
+    </div>
     <script src="Scripts/jquery-3.6.0.js"></script>
+    <script src="Scripts/index.js"></script>
   </body>
 </html>

@@ -26,13 +26,94 @@ document.getElementById("HeaderMenu").onclick=function(){
    $("#MainContent").toggleClass("slide");
   $("#Header").toggleClass("slide");
 }
-
+document.body.onbeforeload=function(){
+   $("#HeaderExtra").height($("#Header").height());
+ $("#HeaderExtra").css("padding",$("#Header").css("padding"));
+}
 document.body.onload=function(){
   $("#HeaderExtra").height($("#Header").height());
  $("#HeaderExtra").css("padding",$("#Header").css("padding"));
+var SlideIn=SlideInElements();
 }
 
 window.onresize=function(){
    $("#HeaderExtra").height($("#Header").height());
  $("#HeaderExtra").css("padding",($("#Header").css("padding")));
+}
+
+function SlideInElements(){
+ count=$(".Category.hidden").length;
+  for(j=0;j<count; j++){
+    Obj=$(".Category.hidden")[0];
+    var isVisible=Check_Position(Obj);
+    if(isVisible==true){
+      $(Obj).removeClass("hidden");
+      $(Obj).addClass("shown");
+    }
+  }
+  function Check_Position(Obj){
+  var Position=Obj.getBoundingClientRect();
+  var ScreenHeight=window.innerHeight;
+  if(Position.top<=ScreenHeight) return true;
+  else return false;
+}
+}
+
+function Favourite(obj){
+  if($(obj).attr("src")=="Images/Unfavourite.png"){
+    //create the animation
+    $(obj).css("transform","scale(1.2,1.2)");
+    $(obj).attr("src","Images/Favourite.png");
+     $("#Alert").toggleClass("shown"); 
+  setTimeout(function(){
+    //remove the animation and show the alert
+    $(obj).css("transform","scale(1,1)");
+    $("#Alert").html("Product has be added to favourites");                  
+  },100)
+    //remove the alert
+    setTimeout(function(){
+       $("#Alert").toggleClass("shown"); 
+    },3000)
+  }
+  else{
+     $(obj).css("transform","scale(1.2,1.2)");
+    $(obj).attr("src","Images/Unfavourite.png");
+    $("#Alert").html("Product has been removed from favourites");
+     $("#Alert").toggleClass("shown"); 
+    setTimeout(function(){
+      $(obj).css("transform","scale(1,1)");
+  },100)
+   //remove the alert
+    setTimeout(function(){
+       $("#Alert").toggleClass("shown"); 
+    },3000)  
+  }
+}
+
+function ShowDetails(obj){
+ $("#Product_Details").find("#Details").html("");
+  $(obj).css("transform","scale(1.2,1.2)");
+  $("#MainContent").toggleClass("blur");
+  $("#Header").toggleClass("blur");
+  setTimeout(function(){
+    //remove the animation and show the alert
+    $(obj).css("transform","scale(1,1)");           
+  },100)
+  $("#Product_Details").toggleClass("shown");
+  var Img=obj.parentElement.parentElement.getElementsByTagName("img").item(1).getAttribute("src");
+  var Name=obj.parentElement.parentElement.getElementsByTagName("h3").item(0).innerHTML;
+  var Banner="<div id='Banner'><img src='"+Img+"'>"+Name+"</div>";
+ $("#Product_Details").find("#Details").html(Banner);
+}
+function CloseDetails(obj){
+   $(obj).css("transform","scale(1.2,1.2)");
+   setTimeout(function(){
+    //remove the animation and show the alert
+    $(obj).css("transform","scale(1,1)");           
+  },100);
+  setTimeout(function(){
+  $("#Product_Details").toggleClass("shown");
+   $("#MainContent").toggleClass("blur");
+  $("#Header").toggleClass("blur");
+},400)
 }

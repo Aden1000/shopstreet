@@ -17,6 +17,12 @@
 body{
   margin:0px;
 }
+#MainContent.blur{
+  filter:blur(5px);
+}
+#Header.blur{
+  filter:blur(5px);
+}
 #Header{
   position:fixed;
   top:0px;
@@ -75,10 +81,30 @@ body{
   margin:10px;
    text-align: left;
   position: relative;
-  left:25%;
-  width:50%;
+  left:15%;
+  width:70%;
   overflow: hidden;
   box-sizing: border-box;
+  transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+}
+.Category:nth-child(odd){
+  transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+}
+.Category.hidden{
+  transform: translateY(25%);
+  opacity:0;
+}
+.Category.shown{
+  transform: translateY(0px);
+  opacity: 1;
 }
 .Catalogue{
   box-sizing: border-box;
@@ -95,62 +121,149 @@ body{
 .Product{
   box-sizing: border-box;
   border:1px solid rgb(150,0,200);
-  padding:10px;
+  padding:2px;
   width:190px;
   height:300px;
   margin:10px;
   text-align: center;
   background: rgb(255,255,255);
   color:rgb(150,0,200);
-  transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-  cursor: pointer;
-  border-radius:5px;
-  -webkit-border-radius:5px;
-}
-.Product:hover, .Product:focus{
-  color: rgb(255,255,255);
-   background: linear-gradient(to left,rgb(150,0,200),rgb(200,0,250));
-  transform:rotateY(180deg) rotateX(0deg);
+  border-radius:10px;
+  -webkit-border-radius:10px;
 }
 .Product h3{
   margin:0px;
 }
-.Product img{
+.Product .Product_Image{
+  max-width:50%;
+}
+.Product input[type="button"]{
+  font-family:"Ebrima Bold";
+  background:linear-gradient(to right,rgb(100,0,150),rgb(200,0,250));
+  height:30px;
+  color:rgb(255,255,255);
+  border:0px;
+  border-radius:5px;
+  -webkit-border-radius:5px;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  cursor: pointer;
   width:60%;
-  height:auto;
+  transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
 }
 .Product div{
   width:100%;
-  height:100%;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
+  height:80%;
   display: flex;
   flex-direction:column;
-  justify-content:space-evenly;
+  justify-content:space-around;
+  align-items:center;
+}
+.Product .Icon{
+  width:30px;
+  max-height:15%;
+  float: right;
+  padding:5px;
+  cursor:pointer;
+   transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+#Alert{
+  transition:0.5s;
+  -moz-transition:0.5s;
+  -ms-transition:0.5s;
+  -o-transition:0.5s;
+  -webkit-transition:0.5s;
+  width:50%;
+  height:40px;
+  color:rgb(150,0,200);
+  background: rgb(255,255,255);
+  border:1px solid rgb(150,0,200);
+  position: fixed;
+  top:10px;
+  left:25%;
+  z-index:1;
+  font-family: "Ebrima Bold";
+  text-align: center;
+  vertical-align: baseline;
+  padding:5px;
+  transform:translateY(-150%);
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#Alert.shown{
+  transform:translateY(0px)
+}
+#Product_Details{
+  width:60%;
+  height:80%;
+  background:rgb(255,255,255);
+  border:2px solid rgb(150,0,200);
+  border-radius:10px;
+  -webkit-border-radius:10px;
+  box-sizing: border-box;
+  padding:10px;
+  position: fixed;
+  left:20%;
+  top:10%;
+   z-index:3;
+  transform: translateY(150%);
+  overflow-y: auto;
+   transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+}
+#Product_Details.shown{
+  transform:translateY(0px)
+}
+#Product_Details #Close_Button{
+  float:right;
+  clear:left;
+  width:30px;
+  margin-left:100%;
+  height:30px;
+  padding:5px;
+   margin-top:5px;
+    cursor:pointer;
+  transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+#Product_Details #Close_Button div{
+   background:linear-gradient(to right,rgb(100,0,150),rgb(200,0,250));
+  width:100%;
+  height:2px;
+}
+#Product_Details #Close_Button #bar1{
+  transform:translateY(100%) rotate(45deg);
+}
+#Product_Details #Close_Button #bar2{
+  transform: rotate(-45deg);
+}
+#Product_Details #Details #Banner{
+  display:flex;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  flex-direction: column;
+  justify-content: space-around;
+  color:rgb(150,0,200);
+  font-family: "Ebrima Bold";
+  width:100%;
   align-items: center;
-  text-overflow: clip;
 }
-.Product .Description{
-  transform: rotateY(180deg);
-  position: relative;
-   bottom:100%;
-}
-.Product div:nth-child(1):after{
-    content:"Place your mouse over me for more details.";
-  }
-
 @media screen and (max-width:500px){
   #HeaderTabs{
     flex-direction: column;
@@ -227,18 +340,70 @@ body{
     left:0px;
     margin: 2px;
   }
+  .Catalogue{
+    border:0px;
+  }
   .Product{
     width:40%;
     height:200px;
+    font-size:80%;
   }
   .Product h3{
     margin:5px;
   }
+  .Product .Product_Image{
+    max-width:40%;
+  }
+  .Product input[type="button"]{
+    width:80%;
+  }
+  #Product_Details{
+    width:100%;
+    height:100%;
+    left:0px;
+    top:0px;
+    border:0px;
+  }
+  #Alert{
+    width:90%;
+    left:3%;
+  }
+}
+@media screen and (min-width:501px) and (max-width:700px){
+  .Category{
+    width:97%;
+    position: static;
+  }
+  .Catalogue{
+    border:0px;
+  }
+  .Product{
+    height:200px;
+    width:150px;
+  }
   .Product img{
     width:40%;
-    height:auto;
+    max-height:50%;
   }
-  .Product div:nth-child(1):after{
-    content:"Click me for more details";
+    #Product_Details{
+      width:100%;
+      height:100%;
+      left:0px;
+      top:0px;
+      border:0px;
+  }
+}
+@media screen and (min-width:701px) and (max-width:999px){
+  .Category{
+    position: relative;
+    left:10%;
+    width:80%;
+  }
+  .Product{
+    width:180px;
+  }
+  .Product img{
+    width:50%;
+    max-height:80%;
   }
 }
