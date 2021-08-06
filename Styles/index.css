@@ -80,35 +80,12 @@ body{
   color:rgb(150,0,200);
   margin:10px;
    text-align: left;
-  position: relative;
-  left:15%;
-  width:70%;
+  width:99%;
   overflow: hidden;
   box-sizing: border-box;
-  transition: 2s;
-    -moz-transition: 2s;
-    -ms-transition: 2s;
-    -webkit-transition: 2s;
-    -o-transition: 2s;
-}
-.Category:nth-child(odd){
-  transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-}
-.Category.hidden{
-  transform: translateY(25%);
-  opacity:0;
-}
-.Category.shown{
-  transform: translateY(0px);
-  opacity: 1;
 }
 .Catalogue{
   box-sizing: border-box;
-  border:1px solid rgb(150,0,200);
   display: flex;
   display: -webkit-box;
   display:-ms-flexbox;
@@ -130,12 +107,35 @@ body{
   color:rgb(150,0,200);
   border-radius:10px;
   -webkit-border-radius:10px;
+  transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+}
+.Product.hidden{
+  transform: translateY(25%);
+  opacity:0;
+}
+.Product.shown{
+  transform: translateY(0px);
+  opacity: 1;
 }
 .Product h3{
   margin:0px;
 }
 .Product .Product_Image{
-  max-width:50%;
+  max-width:50px;
+  max-height:80px;
+  cursor:pointer;
+  transition:0.5s;
+  -moz-transition:0.5s;
+  -webkit-transition:0.5s;
+  -ms-transition:0.5s;
+  -o-transition:0.5s;
+}
+.Product .Product_Image:hover{
+  transform: scale(1.3,1.3) rotateY(360deg);
 }
 .Product input[type="button"]{
   font-family:"Ebrima Bold";
@@ -205,6 +205,8 @@ body{
 #Product_Details{
   width:60%;
   height:80%;
+  word-wrap: break-word;
+  font-family:"Ebrima Bold";
   background:rgb(255,255,255);
   border:2px solid rgb(150,0,200);
   border-radius:10px;
@@ -217,21 +219,28 @@ body{
    z-index:3;
   transform: translateY(150%);
   overflow-y: auto;
+  overflow-x: hidden;
    transition: 1s;
     -moz-transition: 1s;
     -ms-transition: 1s;
     -webkit-transition: 1s;
     -o-transition: 1s;
 }
+#Product_Details h2{
+  color:rgb(150,0,200);
+}
+#Product_Details #About_Product,#Product_Details #Product_Features, #Product_Details #About_Seller{
+  font-family: "Ebrima";
+  max-width:50%
+}
 #Product_Details.shown{
   transform:translateY(0px)
 }
 #Product_Details #Close_Button{
   float:right;
-  clear:left;
-  width:30px;
-  margin-left:100%;
+  clear:both;
   height:30px;
+  width:30px;
   padding:5px;
    margin-top:5px;
     cursor:pointer;
@@ -258,11 +267,42 @@ body{
   display:-webkit-flex;
   display:-ms-flexbox;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   color:rgb(150,0,200);
   font-family: "Ebrima Bold";
   width:100%;
   align-items: center;
+}
+#Product_Details #Details #Banner img{
+  margin-bottom:10px;
+}
+#Footer{
+  display: flex;
+  display: -webkit-box;
+  display:-ms-flexbox;
+  display:-webkit-flex;
+  text-align: center;
+  width:100%;
+  font-size: 25px;
+  box-sizing: border-box;
+  margin:0px;
+  margin-top:20%;
+  position: static;
+  align-items: center;
+  justify-content:center;
+  column-gap:10px;
+  font-family:"Ebrima Bold";
+  color:rgb(150,0,200);
+  padding:10px;
+  border-top:1px solid rgb(150,0,200);
+  transition: 2s;
+  -webkit-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+  -moz-transition: 2s;
+}
+a:link{
+  text-decoration: none;
 }
 @media screen and (max-width:500px){
   #HeaderTabs{
@@ -340,9 +380,6 @@ body{
     left:0px;
     margin: 2px;
   }
-  .Catalogue{
-    border:0px;
-  }
   .Product{
     width:40%;
     height:200px;
@@ -364,16 +401,21 @@ body{
     top:0px;
     border:0px;
   }
+  #Product_Details #About_Product,#Product_Details #Product_Features,#Product_Details #About_Seller{
+  max-width:100%
+}
   #Alert{
     width:90%;
     left:3%;
   }
+  #Footer{
+    font-size: 15px;
+  }
+  #Footer img{
+    width:60px;
+  }
 }
 @media screen and (min-width:501px) and (max-width:700px){
-  .Category{
-    width:97%;
-    position: static;
-  }
   .Catalogue{
     border:0px;
   }
@@ -394,16 +436,17 @@ body{
   }
 }
 @media screen and (min-width:701px) and (max-width:999px){
-  .Category{
-    position: relative;
-    left:10%;
-    width:80%;
-  }
   .Product{
     width:180px;
   }
   .Product img{
     width:50%;
     max-height:80%;
+  }
+  #Product_Details{
+    width:80%;
+    height:90%;
+    left:10%;
+    top:5%;
   }
 }

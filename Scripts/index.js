@@ -42,9 +42,9 @@ window.onresize=function(){
 }
 
 function SlideInElements(){
- count=$(".Category.hidden").length;
+ count=$(".Product.hidden").length;
   for(j=0;j<count; j++){
-    Obj=$(".Category.hidden")[0];
+    Obj=$(".Product.hidden")[0];
     var isVisible=Check_Position(Obj);
     if(isVisible==true){
       $(Obj).removeClass("hidden");
@@ -91,7 +91,7 @@ function Favourite(obj){
 }
 
 function ShowDetails(obj){
- $("#Product_Details").find("#Details").html("");
+ $("#Product_Details").find("#Details").find("#Banner").html("");
   $(obj).css("transform","scale(1.2,1.2)");
   $("#MainContent").toggleClass("blur");
   $("#Header").toggleClass("blur");
@@ -102,8 +102,8 @@ function ShowDetails(obj){
   $("#Product_Details").toggleClass("shown");
   var Img=obj.parentElement.parentElement.getElementsByTagName("img").item(1).getAttribute("src");
   var Name=obj.parentElement.parentElement.getElementsByTagName("h3").item(0).innerHTML;
-  var Banner="<div id='Banner'><img src='"+Img+"'>"+Name+"</div>";
- $("#Product_Details").find("#Details").html(Banner);
+  var Banner="<img src='"+Img+"'>"+Name;
+  $("#Product_Details").find("#Details").find("#Banner").html(Banner);
 }
 function CloseDetails(obj){
    $(obj).css("transform","scale(1.2,1.2)");
