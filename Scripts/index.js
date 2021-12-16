@@ -49,6 +49,15 @@ function SlideInElements(){
     if(isVisible==true){
       $(Obj).removeClass("hidden");
       $(Obj).addClass("shown");
+     /* $(Obj).css("transition","0.5s");
+      $(Obj).css("-webkit-transition","0.5s");
+      $(Obj).css("-moz-transition","0.5s");
+      $(Obj).css("-ms-transition","0.5s");
+      $(Obj).css("-o-transition","0.5s");*/
+    }
+    else{
+      $(Obj).removeClass("shown");
+      $(Obj).addClass("hidden");
     }
   }
   function Check_Position(Obj){
@@ -90,20 +99,31 @@ function Favourite(obj){
   }
 }
 
-function ShowDetails(obj){
- $("#Product_Details").find("#Details").find("#Banner").html("");
+function AddToCart(obj){
   $(obj).css("transform","scale(1.2,1.2)");
-  $("#MainContent").toggleClass("blur");
-  $("#Header").toggleClass("blur");
+  
   setTimeout(function(){
     //remove the animation and show the alert
-    $(obj).css("transform","scale(1,1)");           
+    $(obj).css("transform","scale(1,1)");
+    $("#Alert").html("Product has been added to cart");    
+    $("#Alert").toggleClass("shown"); 
   },100)
-  $("#Product_Details").toggleClass("shown");
-  var Img=obj.parentElement.parentElement.getElementsByTagName("img").item(1).getAttribute("src");
-  var Name=obj.parentElement.parentElement.getElementsByTagName("h3").item(0).innerHTML;
-  var Banner="<img src='"+Img+"'>"+Name;
+    //remove the alert
+    setTimeout(function(){
+       $("#Alert").toggleClass("shown"); 
+    },3000)
+}
+function ShowDetails(obj){
+ $("#Product_Details").find("#Details").find("#Banner").html("");
+  $("#MainContent").toggleClass("blur");
+  $("#Header").toggleClass("blur");
+    $(obj).css("transform","scale(1,1)");           
+  var Img=obj.getElementsByTagName("img").item(0).getAttribute("src");
+  var Name=obj.getElementsByTagName("h3").item(0).innerHTML;
+  var Price=obj.getElementsByClassName("Price").item(0).innerHTML;
+  var Banner="<img src='"+Img+"'>" + Name +"<br>" + "<div class='Price'>"+ Price + "</div>";
   $("#Product_Details").find("#Details").find("#Banner").html(Banner);
+  $("#Product_Details").toggleClass("shown");
 }
 function CloseDetails(obj){
    $(obj).css("transform","scale(1.2,1.2)");
