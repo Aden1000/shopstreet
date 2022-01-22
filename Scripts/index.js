@@ -1,3 +1,4 @@
+var LastScroll;
 document.getElementById("HeaderMenu").onclick=function(){
   //create a smooth animation of the menu bars when clicked
   $("#HeaderMenu #Bar1").toggleClass("clicked");
@@ -26,14 +27,10 @@ document.getElementById("HeaderMenu").onclick=function(){
    $("#MainContent").toggleClass("slide");
   $("#Header").toggleClass("slide");
 }
-document.body.onbeforeload=function(){
-   $("#HeaderExtra").height($("#Header").height());
- $("#HeaderExtra").css("padding",$("#Header").css("padding"));
-}
 document.body.onload=function(){
   $("#HeaderExtra").height($("#Header").height());
  $("#HeaderExtra").css("padding",$("#Header").css("padding"));
-var SlideIn=SlideInElements();
+SlideInElements();
 }
 
 window.onresize=function(){
@@ -45,15 +42,9 @@ function SlideInElements(){
  count=$(".Product.hidden").length;
   for(j=0;j<count; j++){
     Obj=$(".Product.hidden")[0];
-    var isVisible=Check_Position(Obj);
-    if(isVisible==true){
+    if(Check_Position(Obj)==true){
       $(Obj).removeClass("hidden");
       $(Obj).addClass("shown");
-     /* $(Obj).css("transition","0.5s");
-      $(Obj).css("-webkit-transition","0.5s");
-      $(Obj).css("-moz-transition","0.5s");
-      $(Obj).css("-ms-transition","0.5s");
-      $(Obj).css("-o-transition","0.5s");*/
     }
     else{
       $(Obj).removeClass("shown");
@@ -101,6 +92,8 @@ function Favourite(obj){
 
 function AddToCart(obj){
   $(obj).css("transform","scale(1.2,1.2)");
+  $(obj).css("opacity","0.5");
+  $(obj).attr("onclick","")
   
   setTimeout(function(){
     //remove the animation and show the alert
@@ -114,9 +107,9 @@ function AddToCart(obj){
     },3000)
 }
 function ShowDetails(obj){
+LastScroll=window.scrollY;
+  /*prepare the details*/
  $("#Product_Details").find("#Details").find("#Banner").html("");
-  $("#MainContent").toggleClass("blur");
-  $("#Header").toggleClass("blur");
     $(obj).css("transform","scale(1,1)");           
   var Img=obj.getElementsByTagName("img").item(0).getAttribute("src");
   var Name=obj.getElementsByTagName("h3").item(0).innerHTML;
@@ -124,6 +117,11 @@ function ShowDetails(obj){
   var Banner="<img src='"+Img+"'>" + Name +"<br>" + "<div class='Price'>"+ Price + "</div>";
   $("#Product_Details").find("#Details").find("#Banner").html(Banner);
   $("#Product_Details").toggleClass("shown");
+  
+  /*blur the main content*/
+  setTimeout(function(){
+  $("#MainContent").toggleClass("blur");
+  $("#Header").toggleClass("blur");},1000)
 }
 function CloseDetails(obj){
    $(obj).css("transform","scale(1.2,1.2)");
@@ -135,5 +133,21 @@ function CloseDetails(obj){
   $("#Product_Details").toggleClass("shown");
    $("#MainContent").toggleClass("blur");
   $("#Header").toggleClass("blur");
+    window.scrollTo(0,LastScroll);
 },400)
+  setTimeout(function(){
+  $("#AddToCart").css("opacity","1");
+  $("#AddToCart").attr("onclick","AddToCart(this)");}
+  ,1000)
+}
+function SearchKeyword(){
+  return false;
+}
+function RemoveSearch_Icon(){
+  $("#Search_Icon").css("display","none");
+  $("#SearchBox").css("margin-right","25px")
+}
+function ShowSearch_Icon(){
+  $("#Search_Icon").css("display","block");
+  $("#SearchBox").css("margin-right","0px")
 }
