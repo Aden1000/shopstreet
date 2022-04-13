@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Creator: CorelDRAW X7 -->
+
+<svg
+   xml:space="preserve"
+   width="100"
+   height="161.26184"
+   version="1.0"
+   style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+   viewBox="0 0 27.375 44.116454"
+   id="svg3687"
+   sodipodi:docname="Phone Product(1).svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+   id="namedview3689"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   showgrid="false"
+   inkscape:zoom="3.3137558"
+   inkscape:cx="49.94333"
+   inkscape:cy="78.460821"
+   inkscape:window-width="1366"
+   inkscape:window-height="745"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_x0020_1" />
+ <defs
+   id="defs3660">
+  <style
+   type="text/css"
+   id="style3653">
+   <![CDATA[
+    .str0 {stroke:yellow;stroke-width:2.84388}
+    .str1 {stroke:yellow;stroke-width:0.710971}
+    .fil1 {fill:yellow}
+    .fil2 {fill:white}
+    .fil3 {fill:white}
+    .fil0 {fill:url(#id0)}
+   ]]>
+  </style>
+  <linearGradient
+   id="id0"
+   gradientUnits="userSpaceOnUse"
+   x1="152.61099"
+   y1="176.955"
+   x2="63.174999"
+   y2="176.955">
+   <stop
+   offset="0"
+   style="stop-opacity:1; stop-color:#D2D200"
+   id="stop3655" />
+   <stop
+   offset="1"
+   style="stop-opacity:0.6; stop-color:#FFC800"
+   id="stop3657" />
+  </linearGradient>
+ </defs>
+ <g
+   id="Layer_x0020_1"
+   inkscape:label="Layer 1"
+   inkscape:groupmode="layer"
+   transform="translate(0.42193996,0.30581388)">
+  <metadata
+   id="CorelCorpID_0Corel-Layer" />
+  <g
+   id="_2948598550368"
+   transform="matrix(0.12475963,0,0,0.12475963,-0.36929889,-0.36929889)">
+   <rect
+   class="fil0 str0"
+   x="1"
+   y="1"
+   width="213"
+   height="351"
+   rx="11"
+   ry="20"
+   id="rect3663"
+   style="fill:url(#id0)" />
+   <path
+   class="fil1"
+   d="m 213,51 h 3 c 2,0 3,1 3,3 v 10 c 0,1 -1,2 -3,2 h -3 z"
+   id="path3665" />
+   <path
+   class="fil1"
+   d="m 213,71 h 3 c 2,0 3,1 3,2 v 10 c 0,2 -1,3 -3,3 h -3 z"
+   id="path3667" />
+   <g
+   id="g3673">
+    <path
+   class="fil2"
+   d="m 113,62 c 3,6 2,11 -5,15 -3,-8 -1,-13 5,-15 z"
+   id="path3669" />
+    <path
+   class="fil2"
+   d="m 108,81 c 5,-4 16,-5 22,2 -8,8 -8,14 1,19 -2,8 -7,16 -11,17 -5,1 -5,-1 -11,-2 -5,1 -9,5 -13,2 -21,-16 -9,-52 12,-38 z"
+   id="path3671" />
+   </g>
+   <rect
+   class="fil3 str0"
+   x="17"
+   y="9"
+   width="32.5056"
+   height="70.288696"
+   rx="16"
+   ry="16"
+   id="rect3675" />
+   <ellipse
+   class="fil1"
+   transform="matrix(0,-1.15245,1.19054,0,33.5227,63.7331)"
+   rx="8"
+   ry="7"
+   id="ellipse3677"
+   cx="0"
+   cy="0" />
+   <ellipse
+   class="fil1"
+   transform="matrix(0,-1.15245,1.19054,0,33.5227,27.6158)"
+   rx="8"
+   ry="7"
+   id="ellipse3679"
+   cx="0"
+   cy="0" />
+   <ellipse
+   class="fil3 str1"
+   transform="matrix(0,-0.575223,0.594235,0,33.5226,45.3737)"
+   rx="8"
+   ry="7"
+   id="ellipse3681"
+   cx="0"
+   cy="0" />
+   <ellipse
+   class="fil1"
+   transform="matrix(0,-0.308801,0.319007,0,33.5226,45.3737)"
+   rx="8"
+   ry="7"
+   id="ellipse3683"
+   cx="0"
+   cy="0" />
+  </g>
+ </g>
+</svg>

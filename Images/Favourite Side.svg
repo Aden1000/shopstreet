@@ -3,19 +3,19 @@
 
 <svg
    xml:space="preserve"
-   width="50"
-   height="40.153454"
+   width="100"
+   height="100"
    version="1.0"
    style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
-   viewBox="0 0 35.6102 28.589988"
-   id="svg1727"
-   sodipodi:docname="Home.svg"
+   viewBox="0 0 100 100"
+   id="svg1603"
+   sodipodi:docname="Favourite Side.svg"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
-   id="namedview1729"
+   id="namedview1605"
    pagecolor="#ffffff"
    bordercolor="#666666"
    borderopacity="1.0"
@@ -23,9 +23,9 @@
    inkscape:pageopacity="0.0"
    inkscape:pagecheckerboard="0"
    showgrid="false"
-   inkscape:zoom="1.2675737"
-   inkscape:cx="24.850626"
-   inkscape:cy="19.722719"
+   inkscape:zoom="0.49777382"
+   inkscape:cx="125.55903"
+   inkscape:cy="106.47406"
    inkscape:window-width="1366"
    inkscape:window-height="745"
    inkscape:window-x="-8"
@@ -33,43 +33,70 @@
    inkscape:window-maximized="1"
    inkscape:current-layer="Layer_x0020_1" />
  <defs
-   id="defs1721">
+   id="defs1597">
   <style
    type="text/css"
-   id="style1714">
+   id="style1582">
    <![CDATA[
-    .fil0 {fill:url(#id0)}
+    .fil0 {fill:url(#id2);fill-rule:nonzero}
    ]]>
   </style>
+   <mask
+   id="id0">
   <linearGradient
-   id="id0"
+   id="id1"
    gradientUnits="userSpaceOnUse"
-   x1="195.44501"
-   y1="310.93701"
-   x2="195.44501"
-   y2="3.14082"
-   gradientTransform="scale(0.09107468)">
+   x1="478.397"
+   y1="558.19501"
+   x2="271.319"
+   y2="558.19501">
+   <stop
+   offset="0"
+   style="stop-opacity:1; stop-color:white"
+   id="stop1584" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:white"
+   id="stop1586" />
+  </linearGradient>
+    <rect
+   style="fill:url(#id1)"
+   x="271"
+   y="455"
+   width="207"
+   height="207"
+   id="rect1589" />
+   </mask>
+  <linearGradient
+   id="id2"
+   gradientUnits="userSpaceOnUse"
+   x1="374.858"
+   y1="628.60101"
+   x2="374.858"
+   y2="487.78799">
    <stop
    offset="0"
    style="stop-opacity:1; stop-color:#640096"
-   id="stop1716" />
+   id="stop1592" />
    <stop
    offset="1"
    style="stop-opacity:1; stop-color:#C800C8"
-   id="stop1718" />
+   id="stop1594" />
   </linearGradient>
  </defs>
  <g
    id="Layer_x0020_1"
    inkscape:label="Layer 1"
    inkscape:groupmode="layer"
-   transform="translate(0,-0.04098361)">
+   transform="translate(-271.00001,-455)">
   <metadata
    id="CorelCorpID_0Corel-Layer" />
   <path
    class="fil0"
-   d="M 19.398907,0.81967213 35.6102,12.386157 h -6.466302 v 15.57377 c 0,0.364299 -0.273224,0.637523 -0.546448,0.637523 h -5.282332 c -0.273224,0 -0.637522,-0.273224 -0.637522,-0.637523 v -5.828779 h -9.653917 l -0.09107,5.828779 c 0,0.364299 -0.273224,0.637523 -0.637523,0.637523 H 7.1948998 c -0.4553734,0 -0.6375228,-0.09108 -0.6375228,-0.637523 V 12.295082 H 0 L 16.120219,0.81967213 c 1.639344,-1.09289617 1.730419,-1.09289617 3.278688,0 z"
-   id="path1724"
-   style="fill:url(#id0);stroke-width:0.0910747" />
+   style="fill:url(#id2)"
+   d="m 375,493 c -13,-25 -26,-38 -52,-38 -28,0 -52,23 -52,51 0,52 52,104 104,156 52,-52 103,-104 103,-156 0,-28 -23,-51 -51,-51 -26,0 -39,13 -52,38 z"
+   mask="url(#id0)"
+   id="path1600"
+   transform="matrix(0.48309179,0,0,0.48309179,140.08213,235.19324)" />
  </g>
 </svg>

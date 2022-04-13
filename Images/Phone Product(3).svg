@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Creator: CorelDRAW X7 -->
+
+<svg
+   xml:space="preserve"
+   width="99.999992"
+   height="161.78117"
+   version="1.0"
+   style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+   viewBox="0 0 57.897629 93.656992"
+   id="svg1943"
+   sodipodi:docname="Phone Product(3).svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+   id="namedview1945"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   showgrid="false"
+   inkscape:zoom="3.0421769"
+   inkscape:cx="49.471154"
+   inkscape:cy="80.863149"
+   inkscape:window-width="1366"
+   inkscape:window-height="745"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_x0020_1" />
+ <defs
+   id="defs1918">
+  <style
+   type="text/css"
+   id="style1911">
+   <![CDATA[
+    .str0 {stroke:black;stroke-width:13.6759}
+    .str1 {stroke:white;stroke-width:13.6759}
+    .str2 {stroke:#2B2B2B;stroke-width:3.41897}
+    .fil1 {fill:black}
+    .fil3 {fill:#2B2B2B}
+    .fil2 {fill:white}
+    .fil0 {fill:url(#id0)}
+   ]]>
+  </style>
+  <linearGradient
+   id="id0"
+   gradientUnits="userSpaceOnUse"
+   x1="744.12402"
+   y1="850.95099"
+   x2="293.561"
+   y2="850.95099">
+   <stop
+   offset="0"
+   style="stop-opacity:1; stop-color:black"
+   id="stop1913" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#A0A0A0"
+   id="stop1915" />
+  </linearGradient>
+ </defs>
+ <g
+   id="Layer_x0020_1"
+   inkscape:label="Layer 1"
+   inkscape:groupmode="layer"
+   transform="translate(-0.16204977,-0.25726166)">
+  <metadata
+   id="CorelCorpID_0Corel-Layer" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <g
+   id="g2144"
+   transform="matrix(0.05504425,0,0,0.05504425,0.15312986,0.15312986)"><rect
+     class="fil0 str0"
+     x="7"
+     y="7"
+     width="1024"
+     height="1688"
+     rx="55"
+     ry="97"
+     id="rect1921"
+     style="fill:url(#id0)" /><path
+     class="fil1"
+     d="m 1024,247 h 17 c 6,0 11,5 11,11 v 48 c 0,6 -5,11 -11,11 h -17 z"
+     id="path1923" /><path
+     class="fil1"
+     d="m 1024,342 h 17 c 6,0 11,5 11,11 v 48 c 0,6 -5,11 -11,11 h -17 z"
+     id="path1925" /><g
+     id="_2394181981968">
+   <path
+   class="fil2"
+   d="m 543,297 c 15,29 10,53 -23,71 -14,-36 -6,-60 23,-71 z"
+   id="path1927" />
+   <path
+   class="fil2"
+   d="m 520,390 c 23,-19 76,-25 107,11 -40,34 -41,64 2,92 -9,37 -31,75 -54,81 -23,3 -23,-6 -51,-13 -25,7 -42,25 -63,10 -102,-78 -41,-250 59,-181 z"
+   id="path1929" />
+  </g><rect
+     class="fil1 str1"
+     x="83"
+     y="45"
+     width="156"
+     height="338"
+     rx="75"
+     ry="75"
+     id="rect1932" /><ellipse
+     class="fil2"
+     transform="matrix(0,-1.15245,1.19054,0,161.206,306.484)"
+     rx="36"
+     ry="35"
+     id="ellipse1934"
+     cx="0"
+     cy="0" /><ellipse
+     class="fil2"
+     transform="matrix(0,-1.15245,1.19054,0,161.206,132.801)"
+     rx="36"
+     ry="35"
+     id="ellipse1936"
+     cx="0"
+     cy="0" /><ellipse
+     class="fil2 str2"
+     transform="matrix(0,-0.575223,0.594235,0,161.206,218.196)"
+     rx="36"
+     ry="35"
+     id="ellipse1938"
+     cx="0"
+     cy="0" /><ellipse
+     class="fil3"
+     transform="matrix(0,-0.308801,0.319007,0,161.206,218.196)"
+     rx="36"
+     ry="35"
+     id="ellipse1940"
+     cx="0"
+     cy="0" /></g>
+ </g>
+</svg>

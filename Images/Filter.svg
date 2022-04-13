@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Creator: CorelDRAW X7 -->
+
+<svg
+   xml:space="preserve"
+   width="25"
+   height="30.151514"
+   version="1.0"
+   style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+   viewBox="0 0 25 30.151514"
+   id="svg1693"
+   sodipodi:docname="Filter.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+   id="namedview1695"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   showgrid="false"
+   inkscape:zoom="25.297452"
+   inkscape:cx="4.8423849"
+   inkscape:cy="6.2456883"
+   inkscape:window-width="1366"
+   inkscape:window-height="745"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_x0020_1" />
+ <defs
+   id="defs1683">
+  <style
+   type="text/css"
+   id="style1681">
+   <![CDATA[
+    .fil0 {fill:#9600C8}
+   ]]>
+  </style>
+ </defs>
+ <g
+   id="Layer_x0020_1"
+   inkscape:label="Layer 1"
+   inkscape:groupmode="layer"
+   transform="translate(-204,-132.99999)">
+  <metadata
+   id="CorelCorpID_0Corel-Layer" />
+  
+  
+  <g
+   id="g2234"
+   transform="matrix(0.15151515,0,0,0.15151515,173.09091,112.84848)"><path
+     class="fil0"
+     d="M 369,224 H 222 v -21 h -18 v 60 h 18 v -21 h 147 z"
+     id="path1686" /><path
+     class="fil0"
+     d="m 204,294 h 147 v -21 h 18 v 59 H 351 V 312 H 204 Z"
+     id="path1688" /><path
+     class="fil0"
+     d="m 204,154 h 147 v -21 h 18 v 60 H 351 V 172 H 204 Z"
+     id="path1690" /></g>
+ </g>
+</svg>

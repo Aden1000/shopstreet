@@ -1,5 +1,26 @@
 var LastScroll;
-document.getElementById("HeaderMenu").onclick=function(){
+var rotate;
+function SlideInElements(){
+  count=$(".Product.hidden").length;
+  for(j=0;j<count; j++){
+    Obj=$(".Product.hidden")[0];
+    if(Check_Position(Obj)==true){
+      $(Obj).removeClass("hidden");
+      $(Obj).addClass("shown");
+    }
+    else{
+      $(Obj).removeClass("shown");
+      $(Obj).addClass("hidden");
+    }
+  }
+  function Check_Position(Obj){
+  var Position=Obj.getBoundingClientRect();
+  var ScreenHeight=window.innerHeight;
+  if(Position.top<=ScreenHeight) return true;
+  else return false;
+}
+}
+function ShowMenu(){
   //create a smooth animation of the menu bars when clicked
   $("#HeaderMenu #Bar1").toggleClass("clicked");
   $("#HeaderMenu #Bar2").toggleClass("clicked");
@@ -26,39 +47,8 @@ document.getElementById("HeaderMenu").onclick=function(){
   }
    $("#MainContent").toggleClass("slide");
   $("#Header").toggleClass("slide");
-}
-document.body.onload=function(){
-  $("#HeaderExtra").height($("#Header").height());
- $("#HeaderExtra").css("padding",$("#Header").css("padding"));
-SlideInElements();
-}
 
-window.onresize=function(){
-   $("#HeaderExtra").height($("#Header").height());
- $("#HeaderExtra").css("padding",($("#Header").css("padding")));
 }
-
-function SlideInElements(){
- count=$(".Product.hidden").length;
-  for(j=0;j<count; j++){
-    Obj=$(".Product.hidden")[0];
-    if(Check_Position(Obj)==true){
-      $(Obj).removeClass("hidden");
-      $(Obj).addClass("shown");
-    }
-    else{
-      $(Obj).removeClass("shown");
-      $(Obj).addClass("hidden");
-    }
-  }
-  function Check_Position(Obj){
-  var Position=Obj.getBoundingClientRect();
-  var ScreenHeight=window.innerHeight;
-  if(Position.top<=ScreenHeight) return true;
-  else return false;
-}
-}
-
 function Favourite(obj){
   if($(obj).attr("src")=="Images/Unfavourite.png"){
     //create the animation
@@ -89,7 +79,6 @@ function Favourite(obj){
     },3000)  
   }
 }
-
 function AddToCart(obj){
   $(obj).css("transform","scale(1.2,1.2)");
   $(obj).css("opacity","0.5");
@@ -116,8 +105,15 @@ LastScroll=window.scrollY;
   var Price=obj.getElementsByClassName("Price").item(0).innerHTML;
   var Banner="<img src='"+Img+"'>" + Name +"<br>" + "<div class='Price'>"+ Price + "</div>";
   $("#Product_Details").find("#Details").find("#Banner").html(Banner);
+//  var deg=0;
+//  rotate=setInterval(function(){
+//    deg+=1;
+//    $("#Product_Details #Details #Banner img").eq(0).css("transform","rotateY("+deg+"deg)");
+//    if(deg%180==0){
+//      deg=0;
+//    }
+//  },10)
   $("#Product_Details").toggleClass("shown");
-  
   /*blur the main content*/
   setTimeout(function(){
   $("#MainContent").toggleClass("blur");
@@ -125,6 +121,7 @@ LastScroll=window.scrollY;
 }
 function CloseDetails(obj){
    $(obj).css("transform","scale(1.2,1.2)");
+  clearInterval(rotate);
    setTimeout(function(){
     //remove the animation and show the alert
     $(obj).css("transform","scale(1,1)");           

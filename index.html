@@ -3,32 +3,32 @@
   <head>
     <title>Welcome to Shop Street</title>
     <link rel='stylesheet' href='Styles/index.css'>
-    <link rel='icon' href="Images/Shop%20Street Banner.ico">
+    <link rel='icon' href="Images/Shop%20Street.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">  
   </head>
   
-  <body onscroll="SlideInElements()">
+  <body onscroll="SlideInElements()" onload="SlideInElements()">
     <div id="Header">
-    <img id="HeaderImg" src="Images/Shop%20Street Banner.png">
+    <img id="HeaderImg" src="Images/Shop%20Street.svg">
     <div id="HeaderTabs">
     <div id="Home">
-    <img src="Images/Home.png">
+    <img src="Images/Home.svg">
       Home
     </div>
     <div id="Cart">
-      <img src="Images/Cart%20Icon.png">
+      <img src="Images/Cart%20Icon.svg">
       Cart
       </div>
     <div id="Favourites">
-      <img src="Images/Favourite%20Side.png">
+      <img src="Images/Favourite%20Side.svg">
       Favourites
       </div>
     <div id="Account">
-      <img src="Images/Account.png">
+      <img src="Images/Account.svg">
     Account
     </div>
     </div>
-    <div id="HeaderMenu" >
+    <div id="HeaderMenu" onclick='ShowMenu()'>
     <div id="Bar1"></div>
     <div id="Bar2"></div>
     <div id="Bar3"></div>
@@ -38,93 +38,93 @@
     <div id="HeaderExtra"></div>      
       <form class="Search" onsubmit="return SearchKeyword()" >
       <input type="text" placeholder="Search for products" id="SearchBox" autocomplete onfocus="RemoveSearch_Icon()" onblur="ShowSearch_Icon()">
-        <img src="Images/Search.png" id="Search_Icon">
+        <img src="Images/Search.svg" id="Search_Icon">
         <div class="Filter">
-        <img src="Images/Filter.png" id="Filter" title="Filter">
+        <img src="Images/Filter.svg">
         </div>
       </form>
       <div class="Category shown">
       <h1>Phones</h1>
        <div class="Catalogue">
          <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(1).png">
+           <img class="Product_Image" src="Images/Phone%20Product(1).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
       </div>         
          <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(2).png">
+           <img class="Product_Image" src="Images/Phone%20Product(2).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
          </div>
     <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(3).png">
+           <img class="Product_Image" src="Images/Phone%20Product(3).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
          </div>
    <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(1).png">
+           <img class="Product_Image" src="Images/Phone%20Product(1).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
       </div>         
          <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(2).png">
+           <img class="Product_Image" src="Images/Phone%20Product(2).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
          </div>
     <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(3).png">
+           <img class="Product_Image" src="Images/Phone%20Product(3).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
          </div>
    <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(1).png">
+           <img class="Product_Image" src="Images/Phone%20Product(1).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
       </div>         
          <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(2).png">
+           <img class="Product_Image" src="Images/Phone%20Product(2).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
          </div>
     <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(3).png">
+           <img class="Product_Image" src="Images/Phone%20Product(3).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
          </div>
    <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(1).png">
+           <img class="Product_Image" src="Images/Phone%20Product(1).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
       </div>         
          <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(2).png">
+           <img class="Product_Image" src="Images/Phone%20Product(2).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
          </div>
     <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(3).png">
+           <img class="Product_Image" src="Images/Phone%20Product(3).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
@@ -133,84 +133,84 @@
         </div>
      <div class="Catalogue">
          <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(1).png">
+           <img class="Product_Image" src="Images/Phone%20Product(1).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
       </div>         
          <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(2).png">
+           <img class="Product_Image" src="Images/Phone%20Product(2).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
          </div>
     <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(3).png">
+           <img class="Product_Image" src="Images/Phone%20Product(3).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
          </div>
    <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(1).png">
+           <img class="Product_Image" src="Images/Phone%20Product(1).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
       </div>         
          <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(2).png">
+           <img class="Product_Image" src="Images/Phone%20Product(2).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
          </div>
     <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(3).png">
+           <img class="Product_Image" src="Images/Phone%20Product(3).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
          </div>
    <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(1).png">
+           <img class="Product_Image" src="Images/Phone%20Product(1).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
       </div>         
          <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(2).png">
+           <img class="Product_Image" src="Images/Phone%20Product(2).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
          </div>
     <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(3).png">
+           <img class="Product_Image" src="Images/Phone%20Product(3).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
          </div>
    <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(1).png">
+           <img class="Product_Image" src="Images/Phone%20Product(1).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
       </div>         
          <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(2).png">
+           <img class="Product_Image" src="Images/Phone%20Product(2).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
          </div>
     <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(3).png">
+           <img class="Product_Image" src="Images/Phone%20Product(3).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
@@ -219,84 +219,84 @@
         </div>
      <div class="Catalogue">
          <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(1).png">
+           <img class="Product_Image" src="Images/Phone%20Product(1).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
       </div>         
          <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(2).png">
+           <img class="Product_Image" src="Images/Phone%20Product(2).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
          </div>
     <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(3).png">
+           <img class="Product_Image" src="Images/Phone%20Product(3).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
          </div>
    <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(1).png">
+           <img class="Product_Image" src="Images/Phone%20Product(1).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
       </div>         
          <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(2).png">
+           <img class="Product_Image" src="Images/Phone%20Product(2).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
          </div>
     <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(3).png">
+           <img class="Product_Image" src="Images/Phone%20Product(3).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
          </div>
    <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(1).png">
+           <img class="Product_Image" src="Images/Phone%20Product(1).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
       </div>         
          <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(2).png">
+           <img class="Product_Image" src="Images/Phone%20Product(2).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
          </div>
     <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(3).png">
+           <img class="Product_Image" src="Images/Phone%20Product(3).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
          </div>
    <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(1).png">
+           <img class="Product_Image" src="Images/Phone%20Product(1).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
       </div>         
          <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(2).png">
+           <img class="Product_Image" src="Images/Phone%20Product(2).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
              </div>
          </div>
     <div class="Product hidden"  onclick=" ShowDetails(this)">   
-           <img class="Product_Image" src="Images/Phone%20Product(3).png">
+           <img class="Product_Image" src="Images/Phone%20Product(3).svg">
            <h3>Phone X</h3>
            <div class="Price">159.99$
              <span class="discount"> (-50%)</span>
@@ -306,7 +306,7 @@
           <p></p>
 <a target="_blank" href="https://www.upwork.com/o/profiles/users/~01f30432dca8f32983/">
       <div id="Footer">
-      <img src="Images/ADEN.png">
+      <img src="Images/ADEN.svg">
       <h3>THIS WEBSITE WAS BUILT BY
         ADEN
       </h3>    
@@ -323,8 +323,8 @@
       <div id="Details">
         <div id="Banner"></div>
         <div id="Actions">
-          <img src="Images/Unfavourite.png" onclick="Favourite(this)">
-          <img src="Images/Add%20to%20cart.png" onclick="AddToCart(this)" id="AddToCart">
+          <img src="Images/Unfavourite.svg" onclick="Favourite(this)">
+          <img src="Images/Add%20to%20cart.svg" onclick="AddToCart(this)" id="AddToCart">
         </div>
         <h2>About Product</h2>
         <div id="About_Product">
@@ -361,7 +361,6 @@
         </div>
       </div>
     </div>
-
     <script src="Scripts/jquery-3.6.0.js"></script>
     <script src="Scripts/index.js"></script>
   </body>
