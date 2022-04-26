@@ -50,10 +50,10 @@ function ShowMenu(){
 
 }
 function Favourite(obj){
-  if($(obj).attr("src")=="Images/Unfavourite.png"){
+  if($(obj).attr("src")=="Images/Unfavourite.svg"){
     //create the animation
     $(obj).css("transform","scale(1.2,1.2)");
-    $(obj).attr("src","Images/Favourite.png");
+    $(obj).attr("src","Images/Favourite.svg");
      $("#Alert").toggleClass("shown"); 
   setTimeout(function(){
     //remove the animation and show the alert
@@ -67,7 +67,7 @@ function Favourite(obj){
   }
   else{
      $(obj).css("transform","scale(1.2,1.2)");
-    $(obj).attr("src","Images/Unfavourite.png");
+    $(obj).attr("src","Images/Unfavourite.svg");
     $("#Alert").html("Product has been removed from favourites");
      $("#Alert").toggleClass("shown"); 
     setTimeout(function(){
